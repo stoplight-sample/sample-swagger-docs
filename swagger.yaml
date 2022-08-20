@@ -28,9 +28,34 @@ paths:
       summary: Print Hello World!
       tags:
         - hello
+  /bye:
+    get:
+      consumes:
+        - application/json
+      description: Print Bye World!
+      operationId: bye
+      produces:
+        - application/json
+      responses:
+        '201':
+          description: Created
+          schema:
+            type: string
+        '400':
+          description: errorMessage
+          schema:
+            type: string
+        '500':
+          description: errorMessage
+          schema:
+            type: string
+      summary: Print Hello World!
+      tags:
+        - hello
+    parameters: []
 swagger: '2.0'
 schemes:
   - http
   - https
-host: '8085'
+host: 'localhost:8085'
 x-internal: false
