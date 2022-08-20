@@ -2,7 +2,7 @@ info:
   contact: {}
   title: v1
   version: Version
-  description: ''
+  description: xxx
 paths:
   /:
     get:
@@ -57,5 +57,5 @@ swagger: '2.0'
 schemes:
   - http
   - https
-host: 'localhost:8085'
+host: 'localhost:8055'
 x-internal: false
