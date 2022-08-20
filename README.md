@@ -1,5 +1,5 @@
 # sample-swagger-docs
-
+https://github.com/orgs/stoplight-sample/repositories
 
 ## Stoplight Studio
 https://meta.stoplight.io/docs/platform/52ab0a117eadd-welcome-to-the-stoplight-docs
