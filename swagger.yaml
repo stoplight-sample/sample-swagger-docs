@@ -1,28 +1,36 @@
 info:
   contact: {}
+  title: v1
+  version: Version
+  description: ''
 paths:
   /:
     get:
       consumes:
-      - application/json
+        - application/json
       description: Print Hello World!
       operationId: hello
       produces:
-      - application/json
+        - application/json
       responses:
-        "201":
+        '201':
           description: Created
           schema:
             type: string
-        "400":
+        '400':
           description: errorMessage
           schema:
             type: string
-        "500":
+        '500':
           description: errorMessage
           schema:
             type: string
       summary: Print Hello World!
       tags:
-      - hello
-swagger: "2.0"
+        - hello
+swagger: '2.0'
+schemes:
+  - http
+  - https
+host: '8085'
+x-internal: false
