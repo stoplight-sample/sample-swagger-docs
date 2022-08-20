@@ -49,7 +49,7 @@ paths:
           description: errorMessage
           schema:
             type: string
-      summary: Print Hello World!
+      summary: Print Bye World!
       tags:
         - hello
     parameters: []
