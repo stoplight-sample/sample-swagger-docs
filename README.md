@@ -41,6 +41,8 @@ $ curl -X GET 'http://localhost:5000/'
 https://dredd.org/en/latest/index.html
 
 ### 自動テストの実行方法
+【前提】
+- テスト対象のアプリケーション（sample-app）が起動していること
 
 1. auto-api-testディレクトリに移動
 
@@ -57,14 +59,5 @@ $ docker-compose build
 3. Dockerコンテナの起動
 
 ```
-$ docker-compose up -d
+$ docker-compose up
 ```
-
-4. 実行結果の確認
-
-```
-$ docker logs dredd-sample
-```
-
-【前提】
-- テスト対象のアプリケーション（sample-app）が起動していること
