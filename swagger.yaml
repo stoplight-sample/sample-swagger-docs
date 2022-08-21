@@ -17,6 +17,18 @@ paths:
           description: OK
           schema:
             type: string
+            example: Hello World!
+          headers:
+            vary:
+              type: string
+            date:
+              type: string
+            content-length:
+              type: integer
+            connection:
+              type: string
+          examples:
+            Hello World!: string
         '400':
           description: errorMessage
           schema:
@@ -28,6 +40,7 @@ paths:
       summary: Print Hello World!
       tags:
         - hello
+      parameters: []
   /bye:
     get:
       consumes:
