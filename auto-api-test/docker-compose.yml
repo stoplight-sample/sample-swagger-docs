@@ -1,0 +1,13 @@
+version: '3.9'
+services:
+  dreddhooks:
+    image: apiaryio/dredd
+    container_name: dredd-sample
+    volumes:
+      - ../swagger.yaml:/tmp/swagger.yaml:ro
+    command: dredd /tmp/swagger.yaml http://go:8055/
+    networks:
+      - sample-app_default
+networks:
+  sample-app_default:
+    external: true
