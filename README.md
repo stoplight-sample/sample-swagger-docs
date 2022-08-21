@@ -31,3 +31,27 @@ $ docker-compose up -d
 $ curl -X GET 'http://localhost:5000/'
 ```
 
+## Dredd
+https://dredd.org/en/latest/index.html
+
+### 自動テストの実行方法
+1. Dockerイメージのビルド（初回のみ）
+
+```
+$ docker-compose build
+```
+
+2. Dockerコンテナの起動
+
+```
+$ docker-compose up -d
+```
+
+3. 実行結果の確認
+
+```
+$ docker logs dredd-sample
+```
+
+【前提】
+- テスト対象のアプリケーション（sample-app）が起動していること
