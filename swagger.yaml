@@ -1,8 +1,8 @@
 info:
   contact: {}
-  title: v1
-  version: Version
-  description: xxx
+  title: '1.0'
+  version: v1
+  description: stoplight sample API
 paths:
   /:
     get:
