@@ -10,13 +10,19 @@ https://meta.stoplight.io/docs/prism/ZG9jOjky-installation
 
 ### モックの起動方法
 
-1. Dockerイメージのビルド（初回のみ）
+1. mock-serverディレクトリに移動
+
+```
+$ cd mock-server
+```
+
+2. Dockerイメージのビルド（初回のみ）
 
 ```
 $ docker-compose build
 ```
 
-2. Dockerコンテナの起動
+3. Dockerコンテナの起動
 
 ```
 $ docker-compose up -d
@@ -35,19 +41,26 @@ $ curl -X GET 'http://localhost:5000/'
 https://dredd.org/en/latest/index.html
 
 ### 自動テストの実行方法
-1. Dockerイメージのビルド（初回のみ）
+
+1. auto-api-testディレクトリに移動
+
+```
+$ cd auto-api-test
+```
+
+2. Dockerイメージのビルド（初回のみ）
 
 ```
 $ docker-compose build
 ```
 
-2. Dockerコンテナの起動
+3. Dockerコンテナの起動
 
 ```
 $ docker-compose up -d
 ```
 
-3. 実行結果の確認
+4. 実行結果の確認
 
 ```
 $ docker logs dredd-sample
