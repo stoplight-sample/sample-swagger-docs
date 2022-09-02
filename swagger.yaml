@@ -8,7 +8,7 @@ paths:
     get:
       consumes:
         - application/json
-      description: Print Hello World!
+      description: Print Hello World!!
       operationId: hello
       produces:
         - application/json
